@@ -5,3 +5,4 @@
 ### Day 03: Control Structures <br>
 ### Day 04: Loops <br>
 ### Day 05: Functions <br>
+### Day 06: Arrays <br>
