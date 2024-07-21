@@ -7,4 +7,5 @@
 ### Day 05: Functions <br>
 ### Day 06: Arrays <br>
 ### Day 07: Objects <br>
-### Day 07: ES6 Features <br>
+### Day 08: ES6 Features <br>
+### Day 09: DOM Manipulation <br>
