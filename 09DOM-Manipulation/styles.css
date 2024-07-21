@@ -1,0 +1,32 @@
+.myCss {
+    color: rgb(117, 26, 145);
+}
+
+.newLi {
+    background-color: burlywood;
+}
+
+.buttonEl {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: green;
+    border: 0px;
+    color: azure;
+    cursor: pointer;
+}
+
+.newh2 {
+    color: aliceblue;
+    background-color: black;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.colorChanger {
+    background-color: chocolate;
+    padding: 80px;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    border: 10px solid greenyellow;
+}
