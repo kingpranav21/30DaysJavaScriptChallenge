@@ -9,4 +9,4 @@
 ### Day 07: Objects <br>
 ### Day 08: ES6 Features <br>
 ### Day 09: DOM Manipulation <br>
-### Day 09: Event Handling <br>
+### Day 10: Event Handling <br>
