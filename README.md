@@ -10,3 +10,6 @@
 ### Day 08: ES6 Features <br>
 ### Day 09: DOM Manipulation <br>
 ### Day 10: Event Handling <br>
+### Day 11: Promise and Async/await <br>
+### Day 12: Error Handling <br>
+### Day 13: Modules <br>
