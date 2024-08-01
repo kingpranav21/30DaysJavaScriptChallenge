@@ -1,0 +1,35 @@
+ <!-- localStorage saves everything in key-value pairs
+ Activity - 1 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="h1Id">name</h1>
+</head>
+<body>
+  
+<script>
+    //task - 1
+localStorage.setItem("firstname", "Pranav");
+const h1ID = document.getElementById('h1Id');
+h1ID.textContent = localStorage.getItem('firstname');
+console.log(h1ID.textContent);
+   //task - 2
+const obj = {
+    username : 'Pranav',
+    email: 'craxhop@gmail.com',
+    age: 24 
+}
+
+localStorage.setItem('user', JSON.stringify(obj));
+const ruser = JSON.parse(localStorage.getItem('user'));
+console.log(ruser);
+ 
+</script>
+</body>
+</html>
+

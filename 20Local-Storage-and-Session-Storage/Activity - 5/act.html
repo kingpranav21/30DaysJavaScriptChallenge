@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task - 9
+        const saveData = (key,value) =>{
+            localStorage.setItem(key,value);
+            sessionStorage.setItem(key,value);
+
+            const localVal = localStorage.getItem(key); //stores items globally
+            const sessionVal = sessionStorage.getItem(key); //curr session
+
+            console.log(`local: ${localVal}, session: ${sessionVal}`);
+        }
+        //task - 10
+        const clearData = () =>{
+            localStorage.clear(); //clears globally
+            sessionStorage.clear(); //clears curr session/tab/window
+        }
+        saveData(0,1);
+        saveData(1,28);
+
+        clearData();
+    </script>
+</body>
+</html>

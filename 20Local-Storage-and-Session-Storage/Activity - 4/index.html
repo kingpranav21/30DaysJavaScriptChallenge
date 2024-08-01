@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <div>
+        <form id="formId">
+            <label for="name"> Name
+            </label>
+            <input type="text" id="name">
+            <br>
+            <label for="email">
+                Email
+            </label>
+            <input type="email" id="email">
+            <br>
+            <button id="btnId">Save</button>
+        </form>
+       </div>
+       <div>
+        <h2>Saved Data :</h2>
+        <div id="data"></div>
+        <button id="rm">Remove</button>
+       </div>
+        <script>
+            //task - 7
+            const form = document.getElementById('formId');
+            form.addEventListener('submit', (e)=>{
+                e.preventDefault();
+                const nameId  = document.getElementById('name').value;
+                const emailId = document.getElementById('email').value;
+
+                const user = {name : nameId, email : emailId};
+
+                sessionStorage.setItem('user',JSON.stringify(user));
+                
+                displayData()
+            })
+            const displayData = () =>{
+                const getData = document.querySelector('#data');
+                const userData = JSON.parse(sessionStorage.getItem('user'));
+                getData.textContent = `${userData.name} ${userData.email}`;
+            }
+            window.onload = displayData;
+
+            //task - 8
+            const rmBtn = document.querySelector('#rm');
+            rmBtn.addEventListener('click', ()=>{
+                sessionStorage.removeItem('user');
+                displayData();
+            })
+        </script>
+    </body>
+</html>

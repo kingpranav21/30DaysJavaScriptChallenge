@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>
+        Favourite Color
+    </h1>
+</head>
+<body>
+    <script>
+        //Activity - 3
+        //task - 6
+        const val = "red";
+        sessionStorage.setItem('key',val);
+        const getColor = sessionStorage.getItem('key');
+        console.log(getColor);
+
+        //task - 7
+        const user = {
+            username : 'amit',
+            email : 'amitesh@gmail.com'
+        }
+
+        sessionStorage.setItem('user',JSON.stringify(user));
+        console.log(JSON.parse(sessionStorage.getItem('user')));
+    </script>
+</body>
+</html>

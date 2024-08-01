@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form id="formData">
+        <label for="name">Enter your name</label>
+        <input type="text" placeholder="name" id="name">
+        <br>
+        <label for="email">Enter your email</label>
+        <input type="email" placeholder="email" id="email">
+        <br>
+        <button id="btnId">Submit</button>
+    </form>
+
+    <h2>Saved Data:</h2>
+
+    <p id="data"></p>
+    <button id="delD">Delete</button>
+        <script>
+        //task - 3
+         const formId = document.getElementById('formData');
+
+         formId.addEventListener('submit',(e) =>{
+            e.preventDefault();
+            const nameId = document.getElementById('name').value;
+            const emailId = document.getElementById('email').value;
+            const user ={name : nameId, email :emailId};
+            localStorage.setItem('user', JSON.stringify(user));
+            displayData();
+         });
+
+         const displayData = () =>{
+            const savedData = JSON.parse(localStorage.getItem('user'));
+            const dataId  = document.getElementById('data');
+            if (savedData) {
+                dataId.textContent = `${savedData.name}, ${savedData.email}`;
+            } else {
+                dataId.textContent = 'No data found';
+            }
+         };
+         window.onload = displayData;
+         
+         //task - 4
+         const delId = document.getElementById('delD');
+
+         delId.addEventListener('click', ()=>{
+            localStorage.removeItem('user');
+            displayData();
+         })
+        </script>
+    </body>
+</html>
