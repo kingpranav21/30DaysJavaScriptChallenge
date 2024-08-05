@@ -2,10 +2,10 @@
 // sidebarBtn.addEventListener('click', () => {
 //     sidebar.classList.toggle('open');
 // })
-
-const apiKey = "3c2e07d5e5b6e1725b1bb1c1f40155f3";
+import 'dotenv/config'
+const apiKey = process.env.URI;
 const apiUrl =
-    "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=3c2e07d5e5b6e1725b1bb1c1f40155f3";
+    "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=apiKey";
   
 const searchBar = document.querySelector('#search-bar');
   const fetchData = async (city) => {
