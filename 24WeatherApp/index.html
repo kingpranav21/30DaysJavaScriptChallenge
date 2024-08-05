@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="overlay"></div>
+        <div class="container">
+
+            <div class="sidebar">
+
+            </div>
+            <div class="search-bar" style="display: flex; justify-content: flex-end;">
+                <input type="text" id="search-bar" placeholder="🔍 Search">
+            </div>
+            <div class="main-content">
+                <div class="weather-summary">
+                    <h1 class="location">My Location</h1>
+                    <h6 class="city-name">Delhi</h6>
+                    <div class="temp"> 30°</div>
+                    <h4 class="conditions">Cloudy</h4>
+                    <p class="high-to-low">H:34° L:28°</p>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="time">
+                    <p style="margin-top: 2px;" id="pId">Cloudy Conditions will continue.</p> <br>
+                    <div style=" border-bottom: 0.5px solid white;"></div> <br>
+                    <div class="items-time">
+                        <div class="time-block">
+                            <p>Now</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+                        <div class="time-block">
+                            <p>3pm</p>
+                            <br>
+                            <p>30°</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="divv">
+            <div class="allblocks">
+                <div class="day-forecast">
+                    <p style="color:  #aab8c2;">7-DAY FORECAST</p> <br>
+                    <div style=" border-bottom: 0.5px solid white;"></div>
+                    <div class="items-day">
+                        <div class="item">
+                            <h2>Mon</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                        <br>
+                        <div style=" border-bottom: 0.5px solid white;"></div>
+                        <div class="item">
+                            <h2>Tue</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                        <br>
+                        <div style=" border-bottom: 0.5px solid white;"></div>
+                        <div class="item">
+                            <h2>Wed</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                        <br>
+                        <div style=" border-bottom: 0.5px solid white;"></div>
+                        <div class="item">
+                            <h2>Thr</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                        <br>
+                        <div style=" border-bottom: 0.5px solid white;"></div>
+                        <div class="item">
+                            <h2>Fri</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                        <br>
+                        <div style=" border-bottom: 0.5px solid white;"></div>
+                        <div class="item">
+                            <h2>Sat</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                        <br>
+                        <div style=" border-bottom: 0.5px solid white;"></div>
+                        <div class="item">
+                            <h2>Sun</h2>
+                            <h2 style="color:  #aab8c2;">26 </h2>
+                            <h2>34</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                        <div class="air-quality-box">
+                             <p style="color:  #aab8c2; ">AIR QUALITY</p> <br>
+                             <h2 class="air-q">49</h2>
+                            <h3>Good</h3> <br>
+                            <h4>Air Quality is 49, which is similar to yestarday</h4>
+                        </div>
+                        <div class="wind-box" style=" font-size: x-small;">
+                             <p style="color:  #aab8c2; ">WIND</p> <br>
+                             <div style="display: flex; justify-content: space-between;">
+                                <h2 class="windy">7</h2> 
+                                <p style="color:#aab8c2;">KM/H <br> <b style="color: black;">Wind</b> </p>
+                            </div>
+                            <div style=" border-bottom: 0.5px solid white;"></div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <h2 class="gust">18</h2> 
+                                <p style="color:#aab8c2;">KM/H <br> <b style="color: black;">Gusts</b></p>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap;" class="box2">
+                        <div class="uv-index-box">
+                            <h6 style="color:#aab8c2; font-weight: 300;">UV INDEX</h6>
+                            <h2 style="font-weight: 300;">0</h2>
+                            <h3>Low</h3> <br>
+                            <h6>Low for rest of the day</h6>
+                        </div>
+                        <div class="uv-index-box">
+                            <h6 style="color:#aab8c2; font-weight: 300;">SUNRISE</h6>
+                            <h2 style="font-weight: 300;" class="sunrise">5:45AM</h2>
+                            <br>
+                            <div style=" border-bottom: 0.5px solid white;"></div>
+                            <br>
+                            <h6>Sunset : <p class="sunset">7:19 PM</p></h6>
+                        </div>
+                        </div>
+
+                    </div>
+                <div class="otherinfo">
+                     <div style="display: flex; flex-wrap: wrap;" class="box2">
+                        <div class="uv-index-box">
+                            <h6 style="color:#aab8c2; font-weight: 300;">FEELS LIKE</h6>
+                            <h2 style="font-weight: 300;" class="feels">30</h2> <br>
+                            <h6>Humidity is making<br>the day more warmer</h6>
+                        </div>
+                        <div class="uv-index-box">
+                            <h6 style="color:#aab8c2; font-weight: 300;">PRECIPITATION</h6>
+                            <h2 style="font-weight: 300;">7mm</h2>
+                            <h3>in last 24h</h3>
+                            <h6>1mm expected in 24h</h6>
+                        </div>
+                        </div>
+                         <div style="display: flex; flex-wrap: wrap;" class="box2">
+                        <div class="uv-index-box">
+                            <h6 style="color:#aab8c2; font-weight: 300;">Humidity</h6>
+                            <h2 style="font-weight: 300;" class="humidity">85%</h2>
+                            <br><br>
+                            <h6>Dew point</h6>
+                        </div>
+                        <div class="uv-index-box">
+                            <h6 style="color:#aab8c2; font-weight: 300;">VISIBILITY</h6>
+                            <h2 style="font-weight: 300;" class="visible">20 Km</h2>
+                            <br> <br>
+                            <h6>Perfectly clear view</h6>
+                        </div>
+                        </div>
+                        <div class="wind-box" style=" font-size: x-small;">
+                             <p style="color:  #aab8c2; ">PRESSURE</p> <br>
+                             <div style="display: flex; justify-content: space-between;">
+                                <h2 class="pressure">1001</h2> 
+                                <p style="color:#aab8c2;">hPa <br> <b style="color: black;">Wind</b> </p>
+                            </div>
+                            <div style=" border-bottom: 0.5px solid white;"></div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <h2 class="temp">18</h2> 
+                                <p style="color:#aab8c2;"> degree <br> <b style="color: black;">Average</b></p>
+                            </div>
+                        </div>
+                </div>
+               
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+</body>
+
+</html>

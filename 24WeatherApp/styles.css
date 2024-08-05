@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body,
+ html {
+     height: 100%;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .bg {
+     /* The image used */
+     background-image: url("//images.pexels.com/photos/86695/sky-clouds-outdoors-scenic-86695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+     /* Full height */
+     height: 100%;
+
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+.sidebar{
+    width: 250px;
+    background-color: aqua;
+}
+
+#search-bar{
+    margin:15px;
+    padding: 8px;
+    min-width: 15%;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    background-color: #3a4a5b;
+    outline: none;
+    color: #fff;
+    border: 2px solid transparent;
+}
+#search-bar::placeholder {
+    color: #aab8c2;
+}
+#search-bar:hover,
+#search-bar:focus {
+    border-color: #007BFF;
+    /* Highlight color */
+}
+.main-content{
+    align-items: center;
+    color:rgba(55, 55, 55, 0.901)
+}
+.weather-summary {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.location{
+    font-weight: 200;
+}
+.temp{
+    font-size: 50px;
+}
+.time{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    min-width:60%;
+    height : 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.line-break{
+    border-top:2px solid white;
+    padding: 2px;
+}
+.box{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.items-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.time-block {
+    flex: 1;
+    text-align: center;
+}
+.day-forecast{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: x-small;
+    height: 22rem;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+}
+.allblocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1%; 
+    margin-left:20%;
+    margin-right:18.5%;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+.air-quality-box{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    width: 94%;
+    font-size: x-small;
+    margin-bottom: 10px;
+}
+.wind-box{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    width: 94%;
+    color: white;
+    margin-bottom: 10px;
+}
+.additional-info{
+    margin-left: auto;
+    gap: 10px;
+}
+.uv-index-box{
+       background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 10px;
+        width: 45%;
+        color: white;
+        margin-bottom: 10px;
+}
+.box2{
+    gap:10px;
+}
