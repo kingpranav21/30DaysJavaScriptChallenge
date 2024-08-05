@@ -5,7 +5,7 @@
 import 'dotenv/config'
 const apiKey = process.env.URI;
 const apiUrl =
-    "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=apiKey";
+    "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}";
   
 const searchBar = document.querySelector('#search-bar');
   const fetchData = async (city) => {
