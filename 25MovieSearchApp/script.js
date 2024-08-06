@@ -1,6 +1,7 @@
+require('dotenv').config()
 const btnI = document.querySelector(".btn");
 const ipBox = document.querySelector(".input-box");
-const apikey = "34725cc7";
+const apikey = process.env.URI;
 const apiUrl = "http://www.omdbapi.com/";
 const fetchData = async (movie) => {
   try {
