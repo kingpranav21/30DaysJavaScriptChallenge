@@ -1,5 +1,3 @@
-# Step - 1 initilize npm app using npm init -y
-# Step - 2 install express and socket.io using npm i express socket.io --save
-# Step - 3 make a public directory and create script.js and styles.css there
-# Step - 4 install nodemon using npm i nodemon -D
-# Step - 5 create file server.js
+# Real-Time Chat App
+
+A real-time chat application built with Node.js, Express, and Socket.IO. This project demonstrates the use of WebSockets for real-time communication in a chat environment.
